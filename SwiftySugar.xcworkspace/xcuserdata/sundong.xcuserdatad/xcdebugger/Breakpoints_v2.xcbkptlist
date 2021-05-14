@@ -14,10 +14,10 @@
             filePath = "SwiftSugar/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "ViewController"
-            landmarkType = "21">
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "crashEyeDidCatchCrash(with:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -94,8 +94,8 @@
             filePath = "SwiftSugar/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "ViewController"
             landmarkType = "21">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "SwiftSugar/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "ViewController"
             landmarkType = "21">
          </BreakpointContent>
@@ -126,10 +126,10 @@
             filePath = "SwiftSugar/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "ViewController"
-            landmarkType = "3">
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -142,8 +142,8 @@
             filePath = "SwiftSugar/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "ViewController"
             landmarkType = "21">
          </BreakpointContent>
@@ -158,8 +158,8 @@
             filePath = "SwiftSugar/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "ViewController"
             landmarkType = "21">
          </BreakpointContent>
@@ -174,10 +174,10 @@
             filePath = "SwiftSugar/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "swizzled_test2()"
-            landmarkType = "7">
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "ViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -199,22 +199,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3D06D0EA-EDC2-4C8A-9B52-E90E6E2E166B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SwiftSugar/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "2A50FEC1-7246-4046-A896-CEF136B0909F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -222,8 +206,40 @@
             filePath = "SwiftSugar/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "test2()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7DBCD955-013B-4F6E-83BB-5CE8FF07895D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftSugar/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47DAF86C-868A-4440-8081-711C75B5EDD5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftSugar/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>

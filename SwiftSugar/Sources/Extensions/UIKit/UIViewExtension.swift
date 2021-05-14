@@ -36,6 +36,111 @@ extension UIView {
     }
 }
 
+public extension UIView {
+    func makeConstraints( _ closure: ((UIView) -> Void)) {
+        closure(self)
+    }
+    
+    func resetConstraints( _ closure: ((UIView) -> Void)) {
+        constraints.forEach { (element) in
+            element.isActive = false
+        }
+        superview?.constraints.forEach({ (element) in
+            if let identifier = element.identifier, identifier.contains("\(self.hashValue)") {
+                element.isActive = false
+            }
+        })
+        closure(self)
+    }
+    
+    private func checkConstraints(identifier: String?) {
+        guard let identifier = identifier else { return }
+        removeConstraints(constraints.filter({ $0.identifier == identifier }))
+    }
+    
+    @discardableResult func pin(on attribute1: NSLayoutConstraint.Attribute,
+                                view: UIView? = nil,
+                                on attribute2: NSLayoutConstraint.Attribute? = nil,
+                                multiplier: CGFloat = 1,
+                                constant: CGFloat = 0,
+                                priority: Float? = nil) -> NSLayoutConstraint? {
+        guard let view = view ?? superview else { return nil }
+        let identifier = "\(self.hashValue)\(attribute1.rawValue)"
+         translatesAutoresizingMaskIntoConstraints = false
+        let attribute2 = attribute2 ?? attribute1
+        
+        let constraint = NSLayoutConstraint(item: self, attribute: attribute1, relatedBy: .equal, toItem: view, attribute: attribute2, multiplier: multiplier, constant: constant)
+        if let priority = priority {
+            constraint.priority = UILayoutPriority(priority)
+        }
+        constraint.isActive = true
+        constraint.identifier = identifier
+        return constraint
+    }
+
+    func pinEdges(view: UIView? = nil, inset: UIEdgeInsets = UIEdgeInsets.zero) {
+        pin(on: .top, view: view, constant: inset.top)
+        pin(on: .bottom, view: view, constant: inset.bottom)
+        pin(on: .left, view: view, constant: inset.left)
+        pin(on: .right, view: view, constant: inset.right)
+    }
+
+    func pin(size: CGSize) {
+        pin(width: size.width)
+        pin(height: size.height)
+    }
+
+    func pin(width: CGFloat, relatedBy: NSLayoutConstraint.Relation = .equal) {
+        translatesAutoresizingMaskIntoConstraints = false
+        addConstraint(NSLayoutConstraint(item: self, attribute: .width, relatedBy: relatedBy, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: width))
+    }
+
+    func pin(height: CGFloat, relatedBy: NSLayoutConstraint.Relation = .equal) {
+        translatesAutoresizingMaskIntoConstraints = false
+        addConstraint(NSLayoutConstraint(item: self, attribute: .height, relatedBy: relatedBy, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: height))
+    }
+
+    func pinHorizontally(view: UIView? = nil, padding: CGFloat) {
+        pin(on: .left, view: view, constant: padding)
+        pin(on: .right, view: view, constant: -padding)
+    }
+    
+    func pinVertically(view: UIView? = nil, padding: CGFloat) {
+        pin(on: .top, view: view, constant: padding)
+        pin(on: .bottom, view: view, constant: -padding)
+    }
+
+    func pinUpward(view: UIView? = nil) {
+        pin(on: .top, view: view)
+        pin(on: .left, view: view)
+        pin(on: .right, view: view)
+    }
+
+    func pinDownward(view: UIView? = nil) {
+        pin(on: .bottom, view: view)
+        pin(on: .left, view: view)
+        pin(on: .right, view: view)
+    }
+
+    func pinCenter(view: UIView? = nil) {
+        pin(on: .centerX, view: view)
+        pin(on: .centerY, view: view)
+    }
+    
+    
+    func on(constraints: [NSLayoutConstraint]) {
+        constraints.forEach {
+            ($0.firstItem as? UIView)?.translatesAutoresizingMaskIntoConstraints = false
+            $0.isActive = true
+        }
+    }
+
+    func on(_ constraints: NSLayoutConstraint...) {
+        on(constraints: constraints)
+    }
+}
+
+
 // MARK: - Corner Radius
 
 extension UIView {
