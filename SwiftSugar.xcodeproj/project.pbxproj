@@ -12,7 +12,6 @@
 		044B672A2622D654007A6F2A /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B67232622D654007A6F2A /* UIImage+Extension.swift */; };
 		044B672D2622D654007A6F2A /* UIView+AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B67262622D654007A6F2A /* UIView+AddSubviews.swift */; };
 		044B67312622D6B5007A6F2A /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B672E2622D6B5007A6F2A /* Simulator.swift */; };
-		044B67322622D6B5007A6F2A /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B672F2622D6B5007A6F2A /* Constraint.swift */; };
 		044B67332622D6B5007A6F2A /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B67302622D6B5007A6F2A /* Screen.swift */; };
 		044B673E2622D6C4007A6F2A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B67352622D6C4007A6F2A /* Utilities.swift */; };
 		044B673F2622D6C4007A6F2A /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B67372622D6C4007A6F2A /* KeyboardObserver.swift */; };
@@ -97,6 +96,14 @@
 		04594AA126230198000A6910 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04594A6526230198000A6910 /* Injectable.swift */; };
 		04594AA226230198000A6910 /* AnyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04594A6626230198000A6910 /* AnyOptional.swift */; };
 		04594AA326230198000A6910 /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04594A6726230198000A6910 /* Occupiable.swift */; };
+		5E3C7B72262E9C4600FF834B /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C7B71262E9C4600FF834B /* BaseViewProtocol.swift */; };
+		5E3C7B76262E9CBE00FF834B /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C7B75262E9CBE00FF834B /* BaseInteractor.swift */; };
+		5E3C7B7A262E9CE400FF834B /* BaseInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C7B79262E9CE400FF834B /* BaseInteractorProtocol.swift */; };
+		5E3C7B7F262E9D4500FF834B /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C7B7E262E9D4500FF834B /* BasePresenter.swift */; };
+		5E3C7B83262E9D5E00FF834B /* BasePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C7B82262E9D5E00FF834B /* BasePresenterProtocol.swift */; };
+		5E685362262D845000B08711 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E685361262D845000B08711 /* BaseViewController.swift */; };
+		5E69562B264E70C200A3F8B7 /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E69562A264E70C200A3F8B7 /* UIView+Xib.swift */; };
+		5E6AD917262D43E900787F78 /* CrashEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AD916262D43E900787F78 /* CrashEye.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,7 +112,6 @@
 		044B67232622D654007A6F2A /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		044B67262622D654007A6F2A /* UIView+AddSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AddSubviews.swift"; sourceTree = "<group>"; };
 		044B672E2622D6B5007A6F2A /* Simulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
-		044B672F2622D6B5007A6F2A /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
 		044B67302622D6B5007A6F2A /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		044B67352622D6C4007A6F2A /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		044B67372622D6C4007A6F2A /* KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
@@ -192,6 +198,14 @@
 		04594A6526230198000A6910 /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		04594A6626230198000A6910 /* AnyOptional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOptional.swift; sourceTree = "<group>"; };
 		04594A6726230198000A6910 /* Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Occupiable.swift; sourceTree = "<group>"; };
+		5E3C7B71262E9C4600FF834B /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
+		5E3C7B75262E9CBE00FF834B /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		5E3C7B79262E9CE400FF834B /* BaseInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractorProtocol.swift; sourceTree = "<group>"; };
+		5E3C7B7E262E9D4500FF834B /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		5E3C7B82262E9D5E00FF834B /* BasePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterProtocol.swift; sourceTree = "<group>"; };
+		5E685361262D845000B08711 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5E69562A264E70C200A3F8B7 /* UIView+Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Xib.swift"; sourceTree = "<group>"; };
+		5E6AD916262D43E900787F78 /* CrashEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashEye.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +236,8 @@
 		044B67702622E5DA007A6F2A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				5E7DD46C2643BD240013369F /* Tools */,
+				5E685360262D83F700B08711 /* Base */,
 				044B67732622E7BA007A6F2A /* AppConfig */,
 				045912452622D39000E54BA5 /* Extensions */,
 				045949F726230198000A6910 /* Others */,
@@ -277,9 +293,9 @@
 		0459122C2622B96900E54BA5 /* SwiftSugar */ = {
 			isa = PBXGroup;
 			children = (
+				045912312622B96900E54BA5 /* ViewController.swift */,
 				044B67712622E601007A6F2A /* Resources */,
 				044B67702622E5DA007A6F2A /* Sources */,
-				045912312622B96900E54BA5 /* ViewController.swift */,
 			);
 			path = SwiftSugar;
 			sourceTree = "<group>";
@@ -287,9 +303,9 @@
 		045912442622D37C00E54BA5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5E6AD916262D43E900787F78 /* CrashEye.swift */,
 				044B67582622D6C9007A6F2A /* Application.swift */,
 				045949F426230198000A6910 /* Constants.swift */,
-				044B672F2622D6B5007A6F2A /* Constraint.swift */,
 				044B67482622D6C9007A6F2A /* Once.swift */,
 				044B674A2622D6C9007A6F2A /* Operator.swift */,
 				044B67302622D6B5007A6F2A /* Screen.swift */,
@@ -318,6 +334,7 @@
 				044B67222622D654007A6F2A /* UIStackView+AddArrangedSubviews.swift */,
 				044B67262622D654007A6F2A /* UIView+AddSubviews.swift */,
 				044B67202622D654007A6F2A /* UIView+Optimize.swift */,
+				5E69562A264E70C200A3F8B7 /* UIView+Xib.swift */,
 				04594A5726230198000A6910 /* AppKit */,
 				045949FD26230198000A6910 /* CoreGraphics */,
 				04594A2926230198000A6910 /* Foundation */,
@@ -479,6 +496,66 @@
 			path = Swift;
 			sourceTree = "<group>";
 		};
+		5E685360262D83F700B08711 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5E685369262D854600B08711 /* Entity */,
+				5E685368262D853600B08711 /* Presenter */,
+				5E685367262D852A00B08711 /* Routing */,
+				5E685366262D851200B08711 /* Interactor */,
+				5E685365262D850800B08711 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5E685365262D850800B08711 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E685361262D845000B08711 /* BaseViewController.swift */,
+				5E3C7B71262E9C4600FF834B /* BaseViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E685366262D851200B08711 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5E3C7B75262E9CBE00FF834B /* BaseInteractor.swift */,
+				5E3C7B79262E9CE400FF834B /* BaseInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5E685367262D852A00B08711 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		5E685368262D853600B08711 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5E3C7B7E262E9D4500FF834B /* BasePresenter.swift */,
+				5E3C7B82262E9D5E00FF834B /* BasePresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5E685369262D854600B08711 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5E7DD46C2643BD240013369F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -559,6 +636,7 @@
 				04594A7626230198000A6910 /* UIScreenExtension.swift in Sources */,
 				04594A9D26230198000A6910 /* NibLoadable.swift in Sources */,
 				044B67402622D6C4007A6F2A /* CustomKeyboardHandler.swift in Sources */,
+				5E3C7B83262E9D5E00FF834B /* BasePresenterProtocol.swift in Sources */,
 				044B67662622D6CA007A6F2A /* String+URLStringConvertible.swift in Sources */,
 				04594A9426230198000A6910 /* IntExtension.swift in Sources */,
 				044B67432622D6C4007A6F2A /* KeyboardHandler.swift in Sources */,
@@ -567,14 +645,16 @@
 				04594A9526230198000A6910 /* DictionaryExtension.swift in Sources */,
 				044B67652622D6CA007A6F2A /* String+Validation.swift in Sources */,
 				04594A9726230198000A6910 /* DoubleExtension.swift in Sources */,
-				044B67322622D6B5007A6F2A /* Constraint.swift in Sources */,
+				5E6AD917262D43E900787F78 /* CrashEye.swift in Sources */,
 				04594A8526230198000A6910 /* UserDefaultsExtension.swift in Sources */,
 				044B67312622D6B5007A6F2A /* Simulator.swift in Sources */,
 				044B675E2622D6CA007A6F2A /* Swizzler.swift in Sources */,
+				5E685362262D845000B08711 /* BaseViewController.swift in Sources */,
 				04594A7726230198000A6910 /* UILabelExtension.swift in Sources */,
 				04594A7026230198000A6910 /* CGFloatLiteral.swift in Sources */,
 				044B673E2622D6C4007A6F2A /* Utilities.swift in Sources */,
 				04594A8D26230198000A6910 /* ReusableFormatters.swift in Sources */,
+				5E3C7B72262E9C4600FF834B /* BaseViewProtocol.swift in Sources */,
 				044B67632622D6CA007A6F2A /* String+Extension.swift in Sources */,
 				045912322622B96900E54BA5 /* ViewController.swift in Sources */,
 				04594AA126230198000A6910 /* Injectable.swift in Sources */,
@@ -600,9 +680,11 @@
 				04594A7326230198000A6910 /* CGRectExtensions.swift in Sources */,
 				04594A8F26230198000A6910 /* NotificationCenterExtension.swift in Sources */,
 				044B67412622D6C4007A6F2A /* BasicKeyboardHandler.swift in Sources */,
+				5E3C7B7F262E9D4500FF834B /* BasePresenter.swift in Sources */,
 				04594A9626230198000A6910 /* MutableCollectionExtension.swift in Sources */,
 				04594A8C26230198000A6910 /* URLExtension.swift in Sources */,
 				04594A6C26230198000A6910 /* UserDefaultsBacked.swift in Sources */,
+				5E69562B264E70C200A3F8B7 /* UIView+Xib.swift in Sources */,
 				04594A7E26230198000A6910 /* UITextViewExtension.swift in Sources */,
 				04594A6E26230198000A6910 /* UITesting.swift in Sources */,
 				04594A8626230198000A6910 /* NSMutableAttributedStringExtension.swift in Sources */,
@@ -620,6 +702,7 @@
 				04594A8226230198000A6910 /* UIViewControllerExtension.swift in Sources */,
 				04594A9A26230198000A6910 /* DataExtension.swift in Sources */,
 				04594A8E26230198000A6910 /* NSLayoutConstraintsExtension.swift in Sources */,
+				5E3C7B76262E9CBE00FF834B /* BaseInteractor.swift in Sources */,
 				04594A8726230198000A6910 /* NSRangeExtension.swift in Sources */,
 				044B67272622D654007A6F2A /* UIView+Optimize.swift in Sources */,
 				04594A7226230198000A6910 /* CGPointExtension.swift in Sources */,
@@ -633,6 +716,7 @@
 				04594A8A26230198000A6910 /* TimerExtension.swift in Sources */,
 				04594A9126230198000A6910 /* NSAttributedStringExtension.swift in Sources */,
 				044B67682622D6CA007A6F2A /* TypeAlias.swift in Sources */,
+				5E3C7B7A262E9CE400FF834B /* BaseInteractorProtocol.swift in Sources */,
 				044B672D2622D654007A6F2A /* UIView+AddSubviews.swift in Sources */,
 				04594A7426230198000A6910 /* UIImageExtension.swift in Sources */,
 				04594A9B26230198000A6910 /* NSViewExtension.swift in Sources */,
@@ -785,8 +869,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7QT63XRD5R;
+				DEVELOPMENT_TEAM = SRHRDE9MQ6;
 				INFOPLIST_FILE = SwiftSugar/Sources/AppConfig/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -803,8 +888,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7QT63XRD5R;
+				DEVELOPMENT_TEAM = SRHRDE9MQ6;
 				INFOPLIST_FILE = SwiftSugar/Sources/AppConfig/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,12 +9,15 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+class AppDelegate: UIResponder, UIApplicationDelegate, CrashEyeDelegate {
+    // 全局监控crash
+    func crashEyeDidCatchCrash(with model: CrashModel) {
+        print(model)
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        CrashEye.add(delegate: self)
         return true
     }
 

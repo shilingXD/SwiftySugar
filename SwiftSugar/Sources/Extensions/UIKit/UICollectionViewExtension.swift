@@ -90,4 +90,21 @@ extension UICollectionView {
     }
 
 }
+
+extension UICollectionView {
+    // 刷新数据
+    func safeReloadData() {
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        self.reloadData()
+        CATransaction.commit()
+    }
+    // 重新布局
+    func safeLayoutInvalidateLayout() {
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        self.collectionViewLayout.invalidateLayout()
+        CATransaction.commit()
+    }
+}
 #endif
